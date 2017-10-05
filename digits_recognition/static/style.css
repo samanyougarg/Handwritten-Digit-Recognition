@@ -1,0 +1,82 @@
+#the_stage
+{
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    transform: translate3d(0,0,0);
+    position:relative;margin:1.5em 0 1.5rem 0;background-color:#fff;transition:box-shadow .25s;
+    height: auto;
+}
+.card
+{
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    transform: translate3d(0,0,0);
+    position:relative;margin:1.5em 0 1.5rem 0;background-color:#fff;transition:box-shadow .25s;
+    height: auto;
+}
+p
+{
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 1000%;
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.fa {
+    font-size: 110%;
+}
+
+.card { 
+  width:350px;
+  text-align: center;
+}
+
+h5 { 
+  text-align: center;
+}
+
+h7
+{
+    font-size: 16px;
+}
+
+@media only screen
+and (max-width : 480px) {
+.card { width:100px;}
+}
+
+
+@media only screen
+and (max-width : 767px) {
+.card { width:350px;}
+}
+
+.btn{ text-align: center; }
+
+.center-btn { text-align: center }
+
+.card{ text-align: center; }
+
+#the_stage{ text-align: center; }
+
+html, body {
+  height: 100%;
+}
+
+.row {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>RadhaKrishna</title>
+<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="static/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper indigo">
+        <a href="" class="brand-logo center">RadhaKrishna</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="font-30 mb-30" class="col-md-12">
+            <h2 align="center">Handwritten Digits Recognition</h2>  
+            <p align="center">Draw a digit on the left card and click Submit, the result will show on the right card.</p>
+            <hr>  
+                <div class="col-md-6">
+                    <h5>Draw a digit below...</h5>
+                    <div class="row">
+                        <div class="center-btn">
+                            <canvas id="the_stage" width="350" height="350" align="center">Sorry! Your browser doesn't support canvas!</canvas>
+                            <br>
+                            <div class="center-btn">
+                                <a class="btn-floating btn-large waves-effect waves-light pink accent-2" type="button" id="recognize" onclick="clearCanvas()"><i class="material-icons">clear_all</i></a>
+                                <a class="btn-floating btn-large waves-effect waves-light pink accent-2" type="button" id="recognize" onclick="processImg()"><i class="material-icons">send</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>The Recognised Digit is...</h5>
+                        <div class="row">
+                            <div class="center-btn">
+                                <div class="card medium indigo">
+                                    <h3 align="center" class="white-text"></h3>
+                                    <h6 id="rec_result" align="center" class="white-text"></h6>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer indigo">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text"><a class="white-text" href="https://hanuman.blog">Check Out my Website.</a></h5>
+                <p class="grey-text text-lighten-4"><a class="white-text" href="https://hanuman.blog">View the Source Code for this web application.</a></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                  <li><a class="white-text" href=""><i class="fa fa-facebook white-text"></i> Hanuman</a></li>
+                  <li><a class="white-text" href=""><i class="fa fa-twitter white-text"></i> Hanuman</a></li>
+                  <li><a class="white-text" href=""><i class="fa fa-github white-text"></i> Hanuman</a></li>
+                  <li><a class="white-text" href=""><i class="fa fa-google-plus white-text"></i> Hanuman</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright indigo darken-2">
+            <div class="container">
+            Made by <a class="white-text" href="https://hanuman.blog">Samanyou Garg</a>
+            </div>
+          </div>
+        </footer>
+
+<style type="text/css">
+/*h3 { font-size: 100px; line-height: 1.3; margin: 1em 0 .2em; }*/
+h6 {
+    font-size: 1000%;
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.fa {
+    font-size: 110%;
+}
+
+.card { 
+  width:350px;
+  text-align: center;
+}
+
+h5 { 
+  text-align: center;
+}
+
+@media only screen
+and (max-width : 480px) {
+.card { width:100px;}
+}
+
+
+@media only screen
+and (max-width : 767px) {
+.card { width:350px;}
+}
+
+.btn{ text-align: center; }
+
+.center-btn { text-align: center }
+
+.card{ text-align: center; }
+
+#the_stage{ text-align: center; }
+</style>
+
+<script src="static/jquery.min.js"></script>
+<script src="static/bootstrap.min.js"></script>
+<script src="static/materialize.min.js"></script>
+<script src="static/draw.js"></script>
+</body>
+</html>

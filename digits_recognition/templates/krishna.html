@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>recognition</title>
+<link rel="shortcut icon" href="static/logo.png">
+<link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="static/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-wrapper indigo">
+        <a href="" class="brand-logo center">RadhaKrishna</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h2 align="center">Handwritten Digits Recognition</h2>  
+            <p align="center">Draw a digit on the canvas and click Submit, the result will show on the right.</p>
+            <hr>  
+            <div class="row clearfix">
+                <div class="col s6 pull-s1">
+                    <h5 align="center">Draw a digit below...</h5>
+                    <div class="row">
+                        <div class="col s11">
+                            <canvas id="the_stage" width="400" height="400">Sorry! Your browser doesn't support canvas!</canvas>
+                            <div>
+                                <button type="button" class="btn btn-default butt" onclick="clearCanvas()"><strong>clear</strong></button>
+                                <button type="button" class="btn btn-default butt" id="recognize" onclick="processImg()"><strong>recognize</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 push-s1">
+                    <h5 align="center">Recognized Digit is...</h5>
+                        <div class="row">
+                            <div class="col s11">
+                                <div class="card medium amber">
+                                    <h3 id="rec_result" align="center" class="white-text">
+                                        
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="imgs">   
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 400px;
+}
+</style>
+
+<script src="static/jquery.min.js"></script>
+<script src="static/bootstrap.min.js"></script>
+<script src="static/materialize.min.js"></script>
+<script src="static/draw.js"></script>
+</body>
+</html>
